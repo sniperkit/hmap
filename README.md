@@ -26,8 +26,6 @@ It is not safe for concurrent use. Reason being that we do not want to tie the
 content of the map to the scheduling of goroutines. It would render the content
 undeterministic between runs of a same program.
 
-For performance comparisons, have a look at the test file which includes synthetic benchmarks.
-
 #Why not simply use a standard map?
 A standard Go map can be defined as accepting an interface key.
 However, in Go1, types that are based on slices, funcs, or maps are not
