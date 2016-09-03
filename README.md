@@ -32,7 +32,8 @@ However, in Go1, types that are based on slices, funcs, or maps are not
 comparable. Henceforth, they may not be used as map keys (it panics).
 
 This is an implicit restriction that we hope to see lifted in Go2.
-In the meanwhile, the hmap package lifts he  implicit restriction on map keys.
+In the meanwhile, the hmap package does not present any implicit restriction on 
+map keys.
 
 
 For completeness, please refer to the package [documentation].
