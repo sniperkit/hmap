@@ -15,6 +15,7 @@ import (
 )
 
 // Container is the type defining the implementation of the hash map.
+// Not safe for concurrent use by multiple goroutines.
 type Container struct {
 	hashmap map[interface{}]interface{}
 	ull     *sac.Container
